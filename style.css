@@ -1,0 +1,101 @@
+* {
+  margin: 5px;
+}
+html {
+  user-select: none;
+}
+
+body {
+  background-color: #f5f5f5;
+  text-align: center;
+  font-family: "Courier New", "Gill Sans", monospace;
+}
+.personalDetails {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  width: 70%;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Righteous", cursive;
+  font-size: 35px;
+  line-height: 40px;
+  margin: 10px 0 20px;
+  text-shadow: 1px 1px 0 #000;
+  margin: 10px 0 24px;
+  text-align: center;
+}
+.personalDetails input {
+  border: 0;
+  padding: 5px 5px;
+  font-family: "Courier New", "Gill Sans", monospace;
+  border: 1px solid #5379a1;
+  font-size: 25px;
+  font-weight: 800;
+  box-shadow: 0 0 3px #5379a1;
+  text-align: center;
+}
+.personalDetails label {
+  padding: 5px 30px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.personalDetails input:focus {
+  outline: none !important;
+  border-color: #134984;
+  box-shadow: 0 0 10px #134984;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+  background-color: rgb(240, 255, 249);
+  width: 70%;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  background-color: #1d1d1d;
+  color: #c2e5c5;
+  transition: background-color 1000ms linear;
+}
+input[type="radio"]:hover + label {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  left: -999em;
+  position: absolute;
+}
+input[type="radio"] + label {
+  font-family: "Trebuchet MS", sans-serif;
+}
+input[type="radio"] + label {
+  margin: 4px;
+  display: inline-block;
+  background-color: #c2e5c5;
+  padding: 2px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+button {
+  border-radius: 20px;
+  background: rgb(188, 186, 186);
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@media print {
+  html,
+  body {
+    /* Hide the whole page */
+    display: none;
+  }
+}
