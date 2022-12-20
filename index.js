@@ -125,6 +125,11 @@ function loadQuestion(question, j) {
 }
 
 submitBtn.addEventListener("click", (e) => {
+  if (localStorage.getItem("sinkurrefgs") == "treghjk") {
+    alert("You Have Already Submitted The Form.");
+    window.location.href = "submission.html";
+    return;
+  }
   e.preventDefault();
   inputFields = document.querySelectorAll("input");
   for (let i = 0; i < 5; i++) {
