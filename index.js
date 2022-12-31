@@ -105,7 +105,7 @@ let questMarkup = "<div><label>{QUESTION}</label><br />",
   finalMarkup = "";
 const checkedLength = 80;
 Object.keys(ques).forEach((el, j) => {
-  questMarkup = "<div><label>" + el + "</label><br />";
+  questMarkup = "<div class='ques'><label>" + el + "</label><br />";
   choiceMarkup = loadQuestion(el, j);
   finalMarkup += questMarkup + choiceMarkup + "</div>";
 });
