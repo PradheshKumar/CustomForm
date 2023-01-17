@@ -103,7 +103,7 @@ const ques = {
 let questMarkup = "<div><label>{QUESTION}</label><br />",
   choiceMarkup = "",
   finalMarkup = "";
-const checkedLength = 80;
+const checkedLength = 82;
 Object.keys(ques).forEach((el, j) => {
   questMarkup = "<div class='ques'><label>" + el + "</label><br />";
   choiceMarkup = loadQuestion(el, j);
@@ -132,17 +132,22 @@ submitBtn.addEventListener("click", (e) => {
   }
   e.preventDefault();
   inputFields = document.querySelectorAll("input");
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 7; i++) {
+    ///////
     if (inputFields[i].value == "") {
       alert("Enter Your Details");
       return;
     }
   }
   inputFields.forEach((el, i) => {
-    if (i < checkedLength) if (el.checked) checkedFields.push(el.value);
+    if (i < checkedLength)
+      if (el.checked) {
+        checkedFields.push(el.value);
+      }
   });
-  console.log(checkedFields);
-  if (checkedFields.length != Object.keys(ques).length + 6) {
+  if (checkedFields.length != Object.keys(ques).length + 8) {
+    ////////////
+    console.log(Object.keys(ques).length + 8, checkedFields);
     alert("Answer All The Questions");
     checkedFields = [];
     return;
@@ -151,8 +156,8 @@ submitBtn.addEventListener("click", (e) => {
 });
 function submit() {
   let j = 0;
-
-  for (let i = 80; i < inputFields.length; i++) {
+  for (let i = 82; i < inputFields.length; i++) {
+    ///
     inputFields[i].value = checkedFields[j++];
   }
 

@@ -1,6 +1,23 @@
 * {
   margin: 5px;
 }
+header {
+  background-color: #fff0f0;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  justify-content: center;
+  align-items: center;
+}
+header img:nth-child(1) {
+  padding-left: 100px;
+  padding-right: 20px;
+}
+header img:nth-child(2) {
+  margin-right: auto;
+}
+header h1 {
+  margin-right: auto;
+}
 html {
   user-select: none;
 }
@@ -27,6 +44,11 @@ h1 {
   text-shadow: 1px 1px 0 #000;
   margin: 10px 0 24px;
   text-align: center;
+}
+h4 b {
+  font-weight: 900;
+  font-family: "Gill Sans", monospace;
+  font-size: larger;
 }
 .personalDetails input {
   border: 0;
@@ -97,4 +119,9 @@ button {
     /* Hide the whole page */
     display: none;
   }
+}
+footer {
+  background-color: #e6e3e3;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
