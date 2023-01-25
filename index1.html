@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GDSC SVCE-Web Development</title>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <header>
+      <img src="./gdsc-logo.png" width="5%" alt="Study" />
+      <img src="./download.png" width="5%" alt="Study" />
+
+      <h1>WEB DEVELOPMENT QUIZ</h1>
+    </header>
+    <form>
+      <div class="personalDetails">
+        <div class="name">
+          <label>Enter Your Name </label><br />
+          <input type="text" required checked />
+        </div>
+        <div class="mailID">
+          <label>Enter College Mail ID </label><br />
+          <input type="email" required checked />
+        </div>
+        <div class="phone">
+          <label>Enter Phone Number </label><br />
+          <input
+            type="tel"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            required
+            checked
+          />
+        </div>
+        <div class="dept">
+          <label>Enter Department </label><br />
+          <input type="text" required checked />
+        </div>
+        <div class="year">
+          <label>Enter Year of Study </label><br />
+          <input type="text" required checked />
+        </div>
+        <div class="whyJoin">
+          <label>Why do you want to join our club?</label><br />
+          <input type="text" required checked />
+        </div>
+        <div class="techStack">
+          <label>Enter any tech stacks you have experience with</label><br />
+          <input type="text" required checked />
+        </div>
+        <div class="githubLink">
+          <label
+            >Enter Your GitHub Link or any Other Link That shows your Web
+            Development Skills(Optional) </label
+          ><br />
+          <input type="text" checked />
+        </div>
+      </div>
+      <div class="mainContent"></div>
+
+      <button class="submitBtn">SUBMIT</button>
+    </form>
+    <iframe
+      name="hiddenConfirm"
+      style="display: none"
+      id="hiddenConfirm"
+      onload="submitFn()"
+    ></iframe>
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLScBUrEkZwzHVmoLHUv1MVgZzFrddpP3VJnHStLC_UK2xifUAg/formResponse
+    "
+      style="display: none"
+      method="post"
+      target="hiddenConfirm"
+      onsubmit="submitted=true"
+      class="formSubmit"
+    >
+      <div class="form-element">
+        <input type="text" name="entry.1515478675" id="name" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.383142609" id="email" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1825791840" id="phone" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1364204839" id="dept" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1933923291" id="year" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.689497355" id="whyJoin" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.868015796" id="techStack" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.2004966138" id="githubLink" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.366340186" id="1" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1810692655" id="2" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1850672320" id="3" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1918069270" id="4" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.245946680" id="5" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.168581615" id="6" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.70574052" id="7" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1312648391" id="8" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.157146999" id="9" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.590802824" id="10" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.294249059" id="11" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1222934912" id="12" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.986145116" id="13" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1755987841" id="14" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.345480778" id="15" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.2087139882" id="16" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.2030149389" id="17" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.1490062420" id="18" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.393532987" id="19" />
+      </div>
+      <div class="form-element">
+        <input type="text" name="entry.270240794" id="20" />
+      </div>
+    </form>
+    <footer>
+      <h4>
+        For any queries contact : Pratosh B - 8778062251 (Web Development Lead),
+        Pradhesh Kumar R - 9087523458
+      </h4>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
