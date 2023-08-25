@@ -1,0 +1,1 @@
+![Xero Authorization](download.png)
